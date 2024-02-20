@@ -7,5 +7,10 @@ public enum ContactType {
     SIGNAL,
     THREEMA,
     PHONE,
-    EMAIL
+    EMAIL;
+
+    public static ContactType[] getContactTypes() {
+        ContactType[] contacts = {TELEGRAM, WHATS_APP, VIBER, SIGNAL, THREEMA, PHONE, EMAIL};
+        return contacts;
+    }
 }
